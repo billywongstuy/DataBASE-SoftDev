@@ -1,0 +1,11 @@
+import sqlite3
+
+f = "info.db"
+
+db = sqlite3.connect(f)
+c = db.cursor()
+
+
+q = "SELECT * FROM courses"
+a = c.execute(q)
+print a
