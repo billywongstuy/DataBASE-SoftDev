@@ -11,12 +11,11 @@ a = c.execute(q)
 print a #for row in a:
    # print row[0]'''
 
-def grades():
-    q = "SELECT name, id from students"
-    a = c.execute(q) #a should be a dictionary, why is it a cursor???????/ 
-    print a #??????
-    for row in a:
-        print row[1] 
-    #print q
+def grades(id):
+    q = "SELECT mark FROM courses WHERE id=" + str(id)
+    a = c.execute(q) #a should be a dictionary, why is it a cursor???????
+    marks = a
+    for row in marks:
+        print marks[0]
 
-grades()
+grades(1)
