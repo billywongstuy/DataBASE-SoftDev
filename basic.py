@@ -101,6 +101,4 @@ def displayStudentAll():
         output += str(round(totalPts/noClasses,1))
         print (output)
 
-#allGrades()
-#averageAll()
-#displayStudentAll()
+displayStudentAll()
